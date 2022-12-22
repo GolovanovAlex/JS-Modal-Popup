@@ -52,6 +52,8 @@ button.show-modal,
   background-color: #fff;
   border-radius: 24px;
   padding: 30px 20px;
+  opacity: 0;
+  pointer-events: none;
 }
 .modal-box i {
   font-size: 70px;
@@ -67,4 +69,14 @@ button.show-modal,
   font-size: 16px;
   font-weight: 400;
   color: #333;
+  text-align: center;
+}
+.modal-box .buttons {
+  margin-top: 25px;
+}
+.modal-box button {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 12px;
+  margin: 0 10px;
 }
