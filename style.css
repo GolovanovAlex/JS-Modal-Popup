@@ -13,6 +13,7 @@ section {
   height: 100%;
   background-color: #e3f2fd;
 }
+
 button {
   font-size: 18px;
   font-weight: 400;
@@ -34,6 +35,9 @@ button.show-modal,
   transform: translate(-50%, -50%);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+section.active .show-modal {
+  display: none;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -42,6 +46,16 @@ button.show-modal,
   opacity: 0;
   pointer-events: none;
 }
+section.active .overlay,
+section.active .modal-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+section.active .modal-box {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .modal-box {
   display: flex;
   flex-direction: column;
@@ -54,7 +68,10 @@ button.show-modal,
   padding: 30px 20px;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(1.2);
 }
+
 .modal-box i {
   font-size: 70px;
   color: #4070f4;
