@@ -1,4 +1,4 @@
-# JS Modal Popup
+# JS Modal Popup Box
 
 ![underconstruction](readme/underconstruction.gif)
 
